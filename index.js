@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 // Frame work
 const express = require("express");
 const mongoose = require("mongoose");
@@ -309,9 +310,4 @@ shapeAI.delete("/publication/delete/book/:isbn/:pubId", (req, res) => {
   });
 });
 
-shapeAI.listen(3000, () => console.log("Server running!!😎"));
-
-// Talk to mongodb in which mongodb understands => ******
-// talk to us in the way we understand => JavaScript
-
-// mongoose
+shapeAI.listen(3000, () => console.log("Server running!!"));
